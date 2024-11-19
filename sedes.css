@@ -1,0 +1,571 @@
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('/api/placeholder/1920/1080') center/cover;
+    height: 80vh;
+}
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.service-card {
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+}
+.video-container {
+    position: relative;
+    height: 0vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav-container .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container .container img{
+    height: 6rem;
+}
+
+.nav-container .container .hidden.md\\:flex {
+    flex: 1;
+    justify-content: center;
+    gap: 2rem; /* Ajusta este valor según el espacio deseado entre los elementos */
+}
+
+.nav-container {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+
+/*PRIMERA  PART*/
+/*PRIMERA*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+
+}
+
+.scroll-section {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.content {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('recursos/sedes/Copia de CAC.png'); /* Asegúrate de que la ruta sea correcta */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    height: 80%; /* Asegura que el contenedor ocupe el 100% de su altura */
+    min-height: 100vh; /* Garantiza que ocupe al menos la altura del viewport */
+    color: #fff;
+    z-index: 2;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #ffcc00;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 1s ease-in-out;
+}
+
+.image-1 {
+    background-image: url('https://i.pinimg.com/736x/bc/ff/c0/bcffc0b1ee61e7f500435017995cd9dd.jpg'); /* Cambia a tu imagen 1 */
+    z-index: 1;
+}
+
+.image-2 {
+    background-image: url('https://i.pinimg.com/736x/78/28/27/78282764547cc07a3fba46f36ebfcffc.jpg'); /* Cambia a tu imagen 2 */
+    z-index: 2;
+    transform: translateY(100%);
+}
+
+.scroll-section:hover .image-1 {
+    transform: translateY(-100%);
+}
+
+.scroll-section:hover .image-2 {
+    transform: translateY(0);
+}
+
+
+/*SEGUNDA PARTE*/
+
+.schedule-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.class-time img{
+    height: 2.5rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: black; /* Fondo negro */
+    padding: 15px;
+}
+
+.header h1 {
+    color: #FFD700; /* Amarillo */
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.header h2 {
+    color: white;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+
+.training-tabs {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 2px;
+}
+
+.tab {
+    background-color: #dc0a2d;
+    color: white;
+    padding: 12px;
+    flex: 1;
+    text-align: center;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.tab.active {
+    background-color: #dc0a2d; /* Rojo */
+    color: white;
+}
+
+
+.program-type {
+    background-color: #dc0a2d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-bottom: 2px;
+}
+
+.date-navigator {
+    background-color: #e6e6e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+.date-nav-button {
+    background: #dc0a2d;
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.date-display {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #333;
+}
+
+.calendar-icon {
+    background-color: #dc0a2d;
+    color: white;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px; /* Espaciado ajustado */
+    background-color: #000;
+}
+
+
+.day-column {
+    background-color: white;
+    width: 20rem;
+}
+
+.day-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+}
+
+.class-card {
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.class-card:nth-child(2n) {
+    border-bottom-color: #007bff;
+}
+
+.class-card:nth-child(2n+1) {
+    border-bottom-color: #dc0a2d;
+}
+
+.class-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+}
+
+.class-name {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.class-location, .class-instructor {
+    color: #666;
+    font-size: 0.8em;
+    margin: 2px 0;
+}
+
+.weather-icon {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.monitor-label {
+    color: #999;
+}
+
+/* Fondo negro para destacar el calendario */
+.schedule-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black; /* Fondo negro */
+}
+
+/* Centrar "GRUPO ACTIVIDAD: TODAS" con los días */
+.program-type {
+    background-color: #dc0a2d;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    margin-bottom: 2px;
+}
+
+/* Estilo para los días */
+.days-selector {
+    display: flex;
+    gap: 10px;
+
+}
+.dropdown-icon {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.day {
+    color: white;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.3rem 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #333; /* Fondo gris oscuro */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.day:hover {
+    background-color: #ff3355; /* Rojo claro */
+    color: white;
+}
+
+
+.calendar{
+    background-color: #000;
+    padding: 2rem;
+}
+
+
+/*TERCERA PARTE*/
+/* Contenedor principal */
+.contact-schedule {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 7rem ;
+    font-family: Arial, sans-serif; /* Tipo de letra */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch; /* Asegura que las columnas y la línea tengan la misma altura */
+    gap: 2rem;
+}
+
+/* Columnas */
+.column {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.column1 {
+    flex: 1;
+    padding: 0 1rem;
+    text-align: right;
+}
+.column1 h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFD700; /* Amarillo */
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.column h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFD700; /* Amarillo */
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.column p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Línea divisoria */
+.divider {
+    width: 2px; /* Ancho de la línea */
+    background-color: #FFD700; /* Amarillo */
+    height: auto; /* Asegura que la altura sea flexible */
+    align-self: stretch; /* Asegura que la línea abarque toda la altura de las columnas */
+}
+
+/* Video de fondo */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra todo sin distorsión */
+    z-index: -1; /* Coloca el video detrás del contenido */
+}
+
+/* Contenedor principal */
+.contact-schedule {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para legibilidad */
+    color: white;
+    padding: 7rem;
+    font-family: Arial, sans-serif;
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    position: relative; /* Asegura que el contenido esté sobre el video */
+    z-index: 1;
+}
+
+/* Columnas */
+.column {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.column1 {
+    flex: 1;
+    padding: 0 1rem;
+    text-align: right;
+}
+
+.column1 h2, .column h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #FFD700; /* Amarillo */
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.column p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Línea divisoria */
+.divider {
+    width: 2px;
+    background-color: #FFD700; /* Amarillo */
+    align-self: stretch;
+}
+
+
+
+  /*FOOTER*/
+  footer {
+ 
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex-basis: 25%;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #FFD700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section P {
+    color: white;
+}
+
+.app-links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.app-links a {
+    margin-right: 20px;
+}
+
+.app-links img {
+    max-width: 120px;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; /* Aumenta el margen inferior para separar el logo de las columnas */
+}
+
+.logo-container img {
+    max-width: 350px;
+    height: auto;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.footer-copyright hr {
+    background-color: #FFD700; /* Color amarillo */
+    height: 2px; /* Ajusta el grosor de la línea si lo deseas */
+    border: none; /* Remueve el borde predeterminado */
+    width: 80%; /* Ajusta el ancho de la línea */
+    margin: 0 auto; /* Centra la línea */
+}

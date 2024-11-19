@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sedes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sedes.css">
+</head>
+<body class="bg-gray-100">
+<!-- Video Hero Section with Nav -->
+<div class="video-container">
+    
+    <!-- Navigation -->
+<nav class="nav-container fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="/recursos/BODYGYM-Photoroom.png" alt="Spinning Center GYM" class="h-8">
+        </div>
+
+        <!-- Navigation Items -->
+        <div class="hidden md:flex items-center justify-center space-x-10 flex-grow">
+            <a href="index.html" class="text-white hover:text-yellow-400">Inicio</a>
+            
+            <div class="dropdown relative">
+                <a href="sedes.html" class="text-white hover:text-yellow-400">Sedes</a>
+            </div>
+
+            <div class="dropdown relative">
+                <a href="servicios.html" class="text-white hover:text-yellow-400">Nuestros Servicios</a>
+            </div>
+
+            <div class="dropdown relative">
+                <a href="#" class="text-white hover:text-yellow-400">IMC</a>
+            </div>
+
+            <div class="dropdown relative">
+                <a href="#" class="text-white hover:text-yellow-400">Nuestros Planes</a>
+            </div>
+
+
+        </div>
+
+        <!-- Autogestión Button -->
+        <div>
+            <button class="bg-yellow-400 text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-500">
+                AUTOGESTIÓN
+            </button>
+        </div>
+    </div>
+</nav>
+
+ 
+</div>
+
+<!-- Rest of the content will go here -->
+
+<script>
+    // Add smooth scrolling
+    document.querySelector('.scroll-indicator').addEventListener('click', () => {
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+
+<!--SEGUNDA-->
+
+<!--PRIMERA PARTE-->
+<section class="scroll-section">
+    <div class="content">
+        <h1>SEDE CALLE 140</h1>
+        <p>¡Te esperamos en Spinning Center Gym!</p>
+        <p>
+            Ubicado en la Cll 140 # 11-45 en Bogotá, nuestro gimnasio te ofrece una experiencia
+            completa de bienestar. En Spinning Center Gym, cada aspecto de tu salud es importante,
+            y trabajamos para brindarte el mejor apoyo.
+        </p>
+        <p>
+            En tu primera visita como afiliado, nuestro entrenador de planta te dará la bienvenida
+            con una evaluación exhaustiva que abarcará aspectos como tu porcentaje de grasa corporal,
+            masa muscular, densidad ósea y edad metabólica.
+        </p>
+        <p>
+            En nuestro gimnasio, también encontrarás una zona cardiovascular de primera categoría y
+            una amplia variedad de clases grupales. ¡La diversión y el desafío están garantizados!
+        </p>
+        <p>En Spinning Center Gym, nos enorgullece <strong>acelerar tu pulso</strong> y ser parte de tu estilo de vida.</p>
+    </div>
+    <div class="image-container">
+        <div class="image image-1"></div>
+        <div class="image image-2"></div>
+    </div>
+</section>
+
+<!--SEGUNDA PARTE-->
+
+<section class="calendar">
+    <div class="schedule-container">
+        <div class="header">
+            <h1>HORARIOS CLASES GRUPALES</h1>
+            <h2>PUEDES RESERVAR CON ANTICIPACIÓN</h2>
+        </div>
+    
+        <div class="training-tabs">
+            <div class="tab active">ENTRENAMIENTOS PÉRDIDA DE GRASA</div>
+            <div class="tab">ENTRENAMIENTOS GANANCIA MUSCULAR</div>
+        </div>
+    
+        <div class="program-type">
+            <span>GRUPO ACTIVIDAD: TODAS</span>
+            <span class="dropdown-icon">&#9660;</span>
+    
+        </div>
+    
+        <div class="date-navigator">
+            <button id="prevDate" class="date-nav-button">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="date-display">
+                <span id="startDate">13/11/2024</span>
+                <i class="fas fa-calendar-alt"></i>
+                <span id="endDate">17/11/2024</span>
+            </div>
+            <button id="nextDate" class="date-nav-button">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <div class="calendar-icon">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+        </div>
+    
+        <div class="days-selector">
+            <div class="day-column">
+                <div class="day-header">LUNES</div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>05:30 / 06:30</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">CROSSFIT</div>
+                    <div class="class-location">SALA: SALA FUNCIONAL</div>
+                    <div class="class-instructor">MONITOR: SEBASTIÁN</div>
+                </div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>06:00 / 06:50</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">SPINNING PELOTÓN</div>
+                    <div class="class-location">SALA: SALA SPINNING</div>
+                    <div class="class-instructor">MONITOR: GISELA</div>
+                </div>
+            </div>
+    
+            <!-- Repeat similar structure for other days -->
+            <div class="day-column">
+                <div class="day-header">MARTES</div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>05:30 / 06:30</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">ZUMBA</div>
+                    <div class="class-location">SALA: SALA FUNCIONAL</div>
+                    <div class="class-instructor">MONITOR: JUAN</div>
+                </div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>06:00 / 06:50</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">FUNCIONAL INFERIOR</div>
+                    <div class="class-location">SALA: SALA SPINNING</div>
+                    <div class="class-instructor">MONITOR: PAULA</div>
+                </div>
+                <!-- Add classes for Thursday -->
+            </div>
+            <div class="day-column">
+                <div class="day-header">MIERCOLES</div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>05:30 / 06:30</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">FUNCIONAL SUPERIOR</div>
+                    <div class="class-location">SALA: SALA FUNCIONAL</div>
+                    <div class="class-instructor">MONITOR: GISELL</div>
+                </div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>06:00 / 06:50</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">ZUMBA CARIBE</div>
+                    <div class="class-location">SALA: SALA SPINNING</div>
+                    <div class="class-instructor">MONITOR: MARTIN</div>
+                </div>
+                <!-- Add classes for Friday -->
+            </div>
+            <div class="day-column">
+                <div class="day-header">JUEVES</div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>05:30 / 06:30</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">AEROBICOS</div>
+                    <div class="class-location">SALA: SALA FUNCIONAL</div>
+                    <div class="class-instructor">MONITOR: PEDRO</div>
+                </div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>06:00 / 06:50</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">SPINNING</div>
+                    <div class="class-location">SALA: SALA SPINNING</div>
+                    <div class="class-instructor">MONITOR: KAREN</div>
+                </div>
+                <!-- Add classes for Saturday -->
+            </div>
+            <div class="day-column">
+                <div class="day-header">VIERNES</div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>05:30 / 06:30</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">FUNCIONAL INFERIOR</div>
+                    <div class="class-location">SALA: SALA FUNCIONAL</div>
+                    <div class="class-instructor">MONITOR: CAROLINA</div>
+                </div>
+                <div class="class-card">
+                    <div class="class-time">
+                        <span>06:00 / 06:50</span>
+                        <img src="recursos/sedes/Gym Logo Gráfico por skyacegraphic0220 · Creative Fabrica.jpg" alt="Weather" class="weather-icon">
+                    </div>
+                    <div class="class-name">FUNCIONAL SUPERIOR</div>
+                    <div class="class-location">SALA: SALA SPINNING</div>
+                    <div class="class-instructor">MONITOR: DANIEL</div>
+                </div>
+            </div>
+            
+            
+    
+        </div>
+    </div>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const dates = [
+                    '01/11/2024', '02/11/2024', '03/11/2024', '04/11/2024', '05/11/2024',
+                    '06/11/2024', '07/11/2024', '08/11/2024', '09/11/2024', '10/11/2024',
+                    '11/11/2024', '12/11/2024', '13/11/2024', '14/11/2024', '15/11/2024',
+                    '16/11/2024', '17/11/2024', '18/11/2024', '19/11/2024', '20/11/2024',
+                    '21/11/2024', '22/11/2024', '23/11/2024', '24/11/2024', '25/11/2024',
+                    '26/11/2024', '27/11/2024', '28/11/2024', '29/11/2024', '30/11/2024'
+                ];
+                
+                let currentIndex = dates.indexOf('13/11/2024');
+                const startDateElement = document.getElementById('startDate');
+                const endDateElement = document.getElementById('endDate');
+    
+                function updateDates() {
+                    startDateElement.textContent = dates[currentIndex];
+                    endDateElement.textContent = dates[Math.min(currentIndex + 4, dates.length - 1)];
+                }
+    
+                document.getElementById('prevDate').addEventListener('click', () => {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        updateDates();
+                    }
+                });
+    
+                document.getElementById('nextDate').addEventListener('click', () => {
+                    if (currentIndex < dates.length - 5) {
+                        currentIndex++;
+                        updateDates();
+                    }
+                });
+    
+                // Inicializar fechas
+                updateDates();
+    
+                // Cambiar tabs
+                const tabs = document.querySelectorAll('.tab');
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                        tabs.forEach(t => t.classList.remove('active'));
+                        tab.classList.add('active');
+                    });
+                });
+            });
+        </script>
+    </div>
+
+
+</section>
+
+
+
+<!--TERCERA PARTE-->
+<section class="contact-schedule">
+    <!-- Video de fondo -->
+    <video class="background-video" autoplay loop muted playsinline>
+        <source src="recursos/VIDEO PROMOCIONAL DE GIMNASIO.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <!-- Columna de Contacto -->
+        <div class="column1 contact">
+            <h2>Contacto</h2>
+            <p><strong>Teléfono Spinning Center Gym Calle 140:</strong><br>301 197 4590 – 301 197 4571</p>
+            <p><strong>Dirección Spinning Center Gym Calle 140:</strong><br>Cll 140 # 11-45, Bogotá</p>
+            <p><strong>E-mail Spinning Center Gym Calle 140:</strong><br>sede.calle140@spinningcentergym.com</p>
+        </div>
+
+        <!-- Línea amarilla divisoria -->
+        <div class="divider"></div>
+
+        <!-- Columna de Horarios -->
+        <div class="column schedule">
+            <h2>Horarios</h2>
+            <p><strong>Lunes a jueves:</strong> 5:00 AM – 10:00 PM</p>
+            <p><strong>Viernes:</strong> 5:00 AM – 9:00 PM</p>
+            <p><strong>Sábados:</strong> 6:00 AM – 6:00 PM</p>
+            <p><strong>Domingos y festivos:</strong> 7:00 AM – 4:00 PM</p>
+        </div>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer>
+    <div class="footer-content">
+      <div class="logo-container">
+        <img src="/recursos/BODYGYM-Photoroom.png" alt="">
+      </div>
+      <div class="footer-section">
+        <h3>HORARIOS SERVICIO AL CLIENTE</h3>
+        <p>Lunes a Viernes: 7:00 AM - 5:00 PM</p>
+      </div>
+      <div class="footer-section">
+        <h3>HORARIOS ASISTENTE VIRTUAL</h3>
+        <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+        <p>Sábados: 9:00 AM - 11:00 AM</p>
+      </div>
+      <div class="footer-section">
+        <h3>TÉRMINOS Y CONDICIONES DEL SERVICIO</h3>
+        <ul>
+          <li>Contrato Usuario 2024</li>
+          <li>Contrato Usuario 2023</li>
+          <li>Contrato Usuario 2022</li>
+          <li>Contrato Débito Automático 2024</li>
+          <li>Contrato Débito Automático 2023</li>
+          <li>Contrato Débito Automático 2022</li>
+          <li>Política de Privacidad</li>
+          <li>Términos y Condiciones</li>
+          <li>Trabaja con Nosotros</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-copyright">
+        <hr> <br>
+      <p>&copy; 2024 Spinning Center Gym</p>
+    </div>
+  </footer>
+
+
+
+   
+</body>
