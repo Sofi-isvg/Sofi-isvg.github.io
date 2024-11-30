@@ -1,0 +1,404 @@
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('/api/placeholder/1920/1080') center/cover;
+    height: 80vh;
+}
+.floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.service-card {
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+}
+.video-container {
+    position: relative;
+    height: 0vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nav-container .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container .container img{
+    height: 6rem;
+}
+
+.nav-container .container .hidden.md\\:flex {
+    flex: 1;
+    justify-content: center;
+    gap: 2rem; /* Ajusta este valor según el espacio deseado entre los elementos */
+}
+
+.nav-container {
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+
+/*PRIMERA  PART*/
+/*PRIMERA*/
+
+
+
+  /*FOOTER*/
+  footer {
+ 
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex-basis: 25%;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #FFD700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-section p, .footer-section ul {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 10px;
+}
+
+.footer-section P {
+    color: white;
+}
+
+.app-links {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.app-links a {
+    margin-right: 20px;
+}
+
+.app-links img {
+    max-width: 120px;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; /* Aumenta el margen inferior para separar el logo de las columnas */
+}
+
+.logo-container img {
+    max-width: 350px;
+    height: auto;
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.footer-copyright hr {
+    background-color: #FFD700; /* Color amarillo */
+    height: 2px; /* Ajusta el grosor de la línea si lo deseas */
+    border: none; /* Remueve el borde predeterminado */
+    width: 80%; /* Ajusta el ancho de la línea */
+    margin: 0 auto; /* Centra la línea */
+}
+
+
+/*PRIMERA PARTE*/
+.hero-imc {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url('/recursos/IMC/784978463e38c2ca54980ea54622dda3.jpg') center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 2rem;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.highlight {
+    background: black;
+    color: #FFD700;
+    padding: 2px 8px;
+}
+
+.yellow-line {
+    width: 100px;
+    height: 3px;
+    background: #FFD700;
+    margin: 1rem auto;
+}
+
+.cta-button {
+    align-items: center;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #feb600;
+    color: #000;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #ddff00;
+}
+/* Nuevos estilos para las secciones */
+.imc-section {
+    padding: 4rem 2rem;
+}
+
+.calculator-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    margin-bottom: 1rem;
+}
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.result-container {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: none;
+}
+
+.normal { background-color: #90EE90; }
+.bajo { background-color: #FFB6C1; }
+.sobrepeso { background-color: #FFA07A; }
+
+
+/*segunda parte*/
+.importance-section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    background: black;
+    color: #FFD700;
+    padding: 2px 8px;
+}
+
+.yellow-line {
+    width: 100px;
+    height: 3px;
+    background: #FFD700;
+    margin: 1rem auto 3rem;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card {
+    flex: 1;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.card:nth-child(1) {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url('https://i.pinimg.com/736x/c4/d5/4b/c4d54bc364db539b7012f42552a817b6.jpg');
+}
+
+.card:nth-child(2) {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url('https://i.pinimg.com/736x/dd/c4/30/ddc430a348a51bdcfdaeee64aaf3f07b.jpg');
+}
+
+.card:nth-child(3) {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                      url('https://i.pinimg.com/736x/d7/4d/dd/d74ddd36b6f14fa5cb49509a27450415.jpg');
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    color: white;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #FFD700;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+
+/*TERCERI*/
+/* Sección de la calculadora */
+.imc-section {
+    position: relative; /* Para que los elementos hijos se posicionen respecto a este contenedor */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow: hidden; /* Evita que el video se salga del contenedor */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Video de fondo */
+.video-background {
+    position: absolute; /* Posiciona el video detrás de la tarjeta */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegura que el video esté detrás */
+    overflow: hidden; /* Oculta cualquier parte del video que se desborde */
+}
+
+.video-background video {
+    width: 100%; /* Asegura que el video cubra todo el contenedor */
+    height: 100%; /* Asegura que el video cubra todo el contenedor */
+    object-fit: cover; /* Mantiene la relación de aspecto del video */
+}
+
+/* Contenedor de la calculadora */
+.calculator-container {
+    position: relative; /* Para que el contenido se posicione sobre el video */
+    z-index: 2; /* Asegura que la tarjeta esté delante del video */
+    padding: 2rem; /* Espaciado interno */
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con algo de transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para la tarjeta */
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Centra la tarjeta */
+}
+
+/* Ajuste para el contenido interno */
+.input-group {
+    margin-bottom: 1rem; /* Espaciado entre grupos de entrada */
+}
+
+.result-container {
+    display: none; /* Oculta el resultado inicialmente */
+    margin-top: 1rem; /* Espaciado superior */
+}

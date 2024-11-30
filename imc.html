@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="imc.css">
+</head>
+<body class="bg-gray-100">
+<!-- Video Hero Section with Nav -->
+
+    
+    <!-- Navigation -->
+<nav class="nav-container fixed w-full z-50">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <a href="index.html"><img src="/recursos/BODYGYM-Photoroom.png" alt="Spinning Center GYM" class="h-8"></a>
+        </div>
+
+        <!-- Navigation Items -->
+        <div class="hidden md:flex items-center justify-center space-x-10 flex-grow">
+            <a href="index.html" class="text-white hover:text-yellow-400">Inicio</a>
+            
+            <div class="dropdown relative">
+                <a href="sedes.html" class="text-white hover:text-yellow-400">Sedes</a>
+            </div>
+
+            <div class="dropdown relative">
+                <a href="servicios.html" class="text-white hover:text-yellow-400">Nuestros Servicios</a>
+            </div>
+
+            <div class="dropdown relative">
+                <a href="imc.html" class="text-white hover:text-yellow-400">IMC</a>
+            </div>
+
+            <div class="dropdown relative">
+                <a href="planes.html" class="text-white hover:text-yellow-400">Nuestros Planes</a>
+            </div>
+
+
+        </div>
+
+        <!-- Autogestión Button -->
+        <div>
+            <button class="bg-yellow-400 text-black px-6 py-2 rounded-full font-bold hover:bg-yellow-500">
+                AUTOGESTIÓN
+            </button>
+        </div>
+    </div>
+</nav>
+
+ 
+</div>
+
+<!-- Rest of the content will go here -->
+
+<script>
+    // Add smooth scrolling
+    document.querySelector('.scroll-indicator').addEventListener('click', () => {
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+
+<!--PRIMERA-->
+<section class="hero-imc">
+    <div class="hero-content">
+        <h1>¿QUÉ ES EL <span class="highlight">IMC</span>?</h1>
+        <div class="yellow-line"></div>
+        <p>El Índice de Masa Corporal (IMC) es una medida utilizada para evaluar si una persona tiene un peso saludable en relación con su altura. Es una herramienta importante para identificar posibles riesgos de salud relacionados con el peso.</p>
+        <button class="cta-button">OBTEN UNA ASESORIA</button>
+    </div>
+</section>
+
+<!-- Segunda sección: Importancia -->
+<section class="importance-section">
+    <h2 class="section-title">IMPORTANCIA DEL <span class="highlight">IMC</span></h2>
+    <div class="yellow-line"></div>
+
+    <div class="cards-container">
+        <div class="card">
+            <div class="card-content">
+                <h3>Evaluación de Riesgos</h3>
+                <p>El IMC ayuda a identificar posibles riesgos de salud relacionados con el peso, como diabetes, hipertensión y enfermedades cardíacas.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Seguimiento del Peso</h3>
+                <p>Permite monitorear cambios en el peso corporal y establecer objetivos realistas para mantener un peso saludable.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Indicador de Salud</h3>
+                <p>Sirve como referencia para evaluar el estado nutricional y determinar si se necesitan cambios en el estilo de vida.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tercera sección: Calculadora -->
+<!-- Tercera sección: Calculadora -->
+<section class="imc-section">
+    <!-- Video de fondo -->
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="/recursos/Gym Promo video_Gym commercial_Cinematic fitness film_Gym Motivation_Fitness promo video_Sony a7III - Synergy Film (720p, h264, youtube).mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+    </div>
+
+    <!-- Contenedor de la calculadora -->
+    <div class="calculator-container">
+        <h2 class="text-center">CALCULA TU <span class="highlight">IMC</span></h2>
+        <div class="yellow-line"></div>
+        
+        <div class="input-group">
+            <label for="peso">Peso (kg)</label>
+            <input type="number" id="peso" placeholder="Ingresa tu peso">
+        </div>
+        
+        <div class="input-group">
+            <label for="altura">Altura (m)</label>
+            <input type="number" id="altura" placeholder="Ingresa tu altura" step="0.01">
+        </div>
+        
+        <button class="cta-button" onclick="calcularIMC()">Calcular IMC</button>
+        
+        <div id="resultado" class="result-container">
+            <p>Tu IMC es: <span id="imc-valor"></span></p>
+            <p>Estado: <span id="imc-estado"></span></p>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    function calcularIMC() {
+        const peso = document.getElementById('peso').value;
+        const altura = document.getElementById('altura').value;
+        const resultadoDiv = document.getElementById('resultado');
+        
+        if (!peso || !altura) {
+            alert('Por favor ingresa todos los datos');
+            return;
+        }
+
+        const imc = peso / (altura * altura);
+        const imcRedondeado = imc.toFixed(2);
+        
+        let estado = '';
+        let clase = '';
+        
+        if (imc < 18.5) {
+            estado = 'Bajo peso';
+            clase = 'bajo';
+        } else if (imc >= 18.5 && imc < 25) {
+            estado = 'Peso normal';
+            clase = 'normal';
+        } else {
+            estado = 'Sobrepeso';
+            clase = 'sobrepeso';
+        }
+
+        document.getElementById('imc-valor').textContent = imcRedondeado;
+        document.getElementById('imc-estado').textContent = estado;
+        
+        resultadoDiv.style.display = 'block';
+        resultadoDiv.className = 'result-container ' + clase;
+    }
+</script>
+
+
+
+<!--FOOTER-->
+<footer>
+    <div class="footer-content">
+      <div class="logo-container">
+        <img src="/recursos/BODYGYM-Photoroom.png" alt="">
+      </div>
+      <div class="footer-section">
+        <h3>HORARIOS SERVICIO AL CLIENTE</h3>
+        <p>Lunes a Viernes: 7:00 AM - 5:00 PM</p>
+      </div>
+      <div class="footer-section">
+        <h3>HORARIOS ASISTENTE VIRTUAL</h3>
+        <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+        <p>Sábados: 9:00 AM - 11:00 AM</p>
+      </div>
+      <div class="footer-section">
+        <h3>TÉRMINOS Y CONDICIONES DEL SERVICIO</h3>
+        <ul>
+          <li>Contrato Usuario 2024</li>
+          <li>Contrato Usuario 2023</li>
+          <li>Contrato Usuario 2022</li>
+          <li>Contrato Débito Automático 2024</li>
+          <li>Contrato Débito Automático 2023</li>
+          <li>Contrato Débito Automático 2022</li>
+          <li>Política de Privacidad</li>
+          <li>Términos y Condiciones</li>
+          <li>Trabaja con Nosotros</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-copyright">
+        <hr> <br>
+      <p>&copy; 2024 Spinning Center Gym</p>
+    </div>
+  </footer>
+
+
+
+   
+</body>
